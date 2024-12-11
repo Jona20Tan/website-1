@@ -11,7 +11,6 @@ export function Home() {
           <EventCard
             title="Air presents AIRPARK"
             image="/airpark-event.png"
-            status="upcoming"
           />
           <EventCard
             title="Air X Fleawhere @ Suntec"
