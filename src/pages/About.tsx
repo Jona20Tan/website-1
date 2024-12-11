@@ -18,7 +18,7 @@ export function About() {
           <div className="relative">
             <div className="w-full aspect-square bg-gradient-to-br from-pink-500 via-blue-500 to-green-500 rounded-3xl p-8">
               <img 
-                src="/castle-illustration.svg" 
+                src="/Castle.png" 
                 alt="Air Castle"
                 className="w-full h-full object-contain"
               />
@@ -37,19 +37,19 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-8 mb-24">
           {[
             {
-              icon: "/adventure-icon.svg",
+              icon: "/adventure.png",
               title: "Adventure",
               description: "Adventure is about inspiring people to embrace curiosity, break free from routine, and discover extraordinary moments in everyday life",
               bgColor: "bg-sky-400"
             },
             {
-              icon: "/imagination-icon.svg",
+              icon: "/imagination.png",
               title: "Imagination",
               description: "Imagination fuels the creativity to see the world differently, turning simple ideas into powerful experiences that connect and inspire.",
               bgColor: "bg-yellow-400"
             },
             {
-              icon: "/recreation-icon.svg",
+              icon: "/recreation.png",
               title: "Recreation",
               description: "Recreation focuses on creating spaces for renewal and connection, reminding us of the joy in shared moments and meaningful interactions.",
               bgColor: "bg-green-400"

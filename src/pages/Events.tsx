@@ -11,7 +11,7 @@ export function Events() {
           <div>
             <EventCard
               title="Air X Fleawhere @ Suntec"
-              image="/airpark-fleawhere.jpg"
+              image="/airpark-fleawhere.png"
               status="upcoming"
               date="18 January - 23rd February 2025"
               link="kongqi.com/airpark/events"
@@ -20,7 +20,7 @@ export function Events() {
           <div>
             <EventCard
               title="Bouncing in 2025"
-              image="/sg60-event.jpg"
+              image="/sg60.png"
               status="coming soon"
             />
           </div>
