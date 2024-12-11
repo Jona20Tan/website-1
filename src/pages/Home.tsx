@@ -10,14 +10,16 @@ export function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           <EventCard
             title="Air presents AIRPARK"
-            image="/airpark-event.png"
+            image="/airpark.png"
+            //status="upcoming"
+            learn_more_link="kongqi.com/airpark/events"
           />
           <EventCard
             title="Air X Fleawhere @ Suntec"
             image="/airpark-fleawhere.png"
             status="upcoming"
             date="18 January - 23rd February 2025"
-            link="kongqi.com/airpark/events"
+            find_out_link="kongqi.com/airpark/events"
           />
         </div>
 

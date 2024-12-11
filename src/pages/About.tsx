@@ -6,13 +6,16 @@ export function About() {
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Us</h1>
-            <p className="text-xl text-white mb-4">
+          <div className='space-y-4'>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">About Us</h1>
+            <p className="text-2xl text-white mb-4">
               AIR stands for Adventure, Imagination, and Recreation.
             </p>
-            <p className="text-lg text-white/80 leading-relaxed">
+            <p className="text-xl text-white/80 leading-relaxed">
               We are a brand committed to creating vibrant, immersive experiences that inspire joy, spark creativity, and bring people together.
+            </p>
+            <p className="text-xl text-white/80 leading-relaxed">
+            Whether at festivals, corporate events, or community gatherings, Air transforms spaces into hubs of unforgettable fun and connection, embodying the spirit of adventure and innovation.
             </p>
           </div>
           <div className="relative">
@@ -25,14 +28,6 @@ export function About() {
             </div>
           </div>
         </div>
-
-        {/* Mission Statement */}
-        <div className="mb-24">
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-4xl mx-auto text-center">
-            Whether at festivals, corporate events, or community gatherings, Air transforms spaces into hubs of unforgettable fun and connection, embodying the spirit of adventure and innovation.
-          </p>
-        </div>
-
         {/* Values Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-24">
           {[
@@ -59,8 +54,8 @@ export function About() {
               key={index} 
               className={`${value.bgColor} rounded-3xl p-8 text-black transition-transform hover:scale-105`}
             >
-              <div className="bg-black/10 w-32 h-32 rounded-2xl flex items-center justify-center mb-6 mx-auto">
-                <img src={value.icon} alt={value.title} className="w-24 h-24" />
+              <div className="bg-black/10 w-48 h-48 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                <img src={value.icon} alt={value.title} className="w-40 h-40" />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">{value.title}</h3>
               <p className="text-black/80 leading-relaxed text-center">

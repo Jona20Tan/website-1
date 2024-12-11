@@ -3,12 +3,13 @@ import React from 'react';
 interface EventCardProps {
   title: string;
   image: string;
-  status: 'upcoming' | 'coming soon';
+  status?: 'upcoming' | 'coming soon';
   date?: string;
-  link?: string;
+  learn_more_link?: string;
+  find_out_link?: string;
 }
 
-export function EventCard({ title, image, status, date, link }: EventCardProps) {
+export function EventCard({ title, image, status, date, learn_more_link, find_out_link }: EventCardProps) {
   return (
     <div className="group">
       <div className="relative">
@@ -33,10 +34,10 @@ export function EventCard({ title, image, status, date, link }: EventCardProps) 
 
       <h3 className="text-title text-white mb-2 text-center">{title}</h3>
       {date && <p className="text-body-large text-white/80 text-center">{date}</p>}
-      {link && (
+      {learn_more_link && (
         <div className="text-center">
           <a 
-            href={`https://${link}`} 
+            href={`https://${learn_more_link}`} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-body-large text-white/80 hover:text-white inline-block mt-2"
@@ -45,6 +46,19 @@ export function EventCard({ title, image, status, date, link }: EventCardProps) 
           </a>
         </div>
       )}
+      {find_out_link && (
+        <div className="text-center">
+          <a 
+            href={`https://${find_out_link}`} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-body-large text-white/80 hover:text-white inline-block mt-2"
+          >
+            Find out more →
+          </a>
+        </div>
+      )}
     </div>
+
   );
 }
