@@ -10,7 +10,7 @@ export function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           <EventCard
             title="Air presents AIRPARK"
-            image="/airpark-event.jpg"
+            image="/airpark-event-2.png"
             status="upcoming"
           />
           <EventCard
